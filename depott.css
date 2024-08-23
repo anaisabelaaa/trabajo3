@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap');/*importa el tipo de fuente*/
+
+
+*{
+	margin: 0; /*establece el margen para los cuatro lados*/
+	padding: 0; /*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+	box-sizing: border-box; /*debe calcular el ancho y alto total de un elemento*/
+	text-decoration: none; /*quita las decoraciones como subrayado*/
+	list-style: none; /* quita el estilo de lista*/
+}
+
+body{/*El elemento cuerpo del documento*/
+	text-align: justify;/*establece la alineación horizontal del contenido en este caso justificado*/
+	font-family: "UnifrakturMaguntia", sans-serif; /*inserta la fuente, la fuente que importamos (solo para titulos)*/
+	background-color: #56070c; /*define el color de fondo*/
+	
+}
+p { /*parrafo*/
+	font-family: Arial, Helvetica, sans-serif; /*fuente para el resto body (los parrajos)*/
+}
+.container{/*clase*/
+	max-width: 1200px;/*ancho maximo*/
+	margin: 0 auto;/*margen automatico*/
+}
+.header{/*clase*/
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url(img/fondo.jpg); /*establece la imágen de fondo
+	 para el header*/
+	background-position: center center; /*centra la imagen*/
+	background-repeat: no-repeat; /*para que no repita la imagen*/
+	background-size: cover; /*especifica el tamaño de la imágen de fondo, cubre todo el ancho*/
+	min-height: 70vh; /*altura minima*/
+	display: flex; /*establece los tipos de visualización interna y externa, flex " modelo flexible"*/
+	align-items: center; /*alinea la posicion del elemento*/
+	}
+	
+
+.Menu{/*clase*/
+	position: absolute; /*especifica cómo el elemento esta posicionado en el documento*/ 
+	top: 0; /*especifica parte de la posición de un elemento posicionado "arriba"*/
+	right: 0; /*especifica parte de la posición de un elemento posicionado "derecha"*/
+	left: 0; /*especifica parte de la posición de un elemento posicionado "izquierda"*/
+	display: flex; /*establece los tipos de visualización interna y externa, flex " modelo flexible"*/
+	align-items: center;/*indica la alineación de los items al centro*/
+	justify-content: space-between; /*Justifica el contenido*/
+
+}
+.header-txt{/*clase*/
+	width: 50%; /*establece el ancho*/
+}
+.header-txt h1{ /*clase pero solo los h1*/
+	font-size: 105px; /*dimension de la letra*/
+	line-height: 110px; /*establece la altura de la casilla */
+	color: white; /*especifica un color*/ 
+	margin-bottom: 15px;/*establece el espacio inferior del elemento*/
+}
+.header-txt p{ /*clase pero solo los p "parrafo"*/
+	font-size: 28px; /*dimension de la letra*/
+	color: #E0E0E0; /*especifica un color*/ 
+	margin-bottom: 35px; /*establece el espacio inferior del elemento*/
+}
+.btn-1{/*clase*/
+	
+	display: inline-block;/*establece los tipos de visualización interna y externa*/
+	padding: 11px 45px;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+	background-color: #B7975B;/*define el color de fondo del elemento*/
+	color: #FEFCFB; /*especifica un color*/ 
+	border-radius: 25px; /*agrega un borde con radio*/
+	font-size: 22px;/*dimension de la letra*/
+}
+.btn-1:hover { /*clase, hover puede hacer flotar sobre los elementos*/
+
+	background-color: #a08450;/*define el color de fondo del elemento*/
+}
+.direction{/*los datos de la empresa*/
+	display: flex; /*para que se coloque enfrete del otro*/
+	justify-content: space-between; /*Justifica el contenido*/
+	padding: 40px 0;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+}
+.direction p{/*clase, los datos de la empresa solo parrafos*/
+	color: white; /*especifica un color*/ 
+	font-size: 16px;/*dimension de la letra*/
+}
+.about {
+	padding: 100px 0; /*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+	display: flex; /*establece los tipos de visualización interna y externa, flex en este caso flexible*/
+}
+.about-txt{
+	width: 50%;/*ancho del elemento*/
+}
+.about-img img{ 
+	width: 50px;/*ancho del elemento, imagen*/
+}
+.about-img img{
+	margin-left: 20px; /*establece un margen a la izquierda*/
+	margin-right: 20px; /*establece un margen a la derecha*/
+	width: 450px;/*ancho del elemento, imagen*/
+	height: 300px ; /*especifica la altura*/
+
+}
+
+h2{
+	font-size: 70px;/*dimension de la letra*/
+	color: white; /*especifica un color*/ 
+	margin-bottom: 15px;/*establece el espacio inferior del elemento*/
+
+}
+.about-txt p{
+	font-size: 16px;/*dimension de la letra*/
+	color: white; /*especifica un color*/ 
+	margin-bottom: 35px;/*establece el espacio inferior del elemento*/
+	align-content: center;/*ajusta las líneas dentro de un contenedor flex*/
+}
+.information{
+	display: flex; /*establece los tipos de visualización interna y externa, flex en este caso flexible*/
+	justify-content: space-between;/*Justifica el contenido*/
+	padding: 50px 0; /*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+}
+.information-1 {
+	display: flex; /*establece los tipos de visualización interna y externa, flex en este caso flexible*/
+	align-items: center;/*indica la alineación de los items al centro*/
+}
+.information-1 h3{/*clase, manda a llamar a los h3*/
+	font-size: 70px;/*dimension de la letra*/
+	color: white;/*especifica un color de fuente*/ 
+}
+.information-1 p{
+	font-size: 16px;/*dimension de la letra*/
+	color: white;/*especifica un color de fuente*/ 
+	margin-left: 15px;/*establece un margen a la izquierda*/
+}
+.house{/*seccion de las imagenes*/
+	display: flex; /*establece los tipos de visualización interna y externa, flex en este caso flexible*/
+	justify-content: space-between;/*Justifica el contenido*/
+}
+.house-1{
+	background-image: linear-gradient(/*establece la imágen de fondo*/
+		rgba(0, 0, 0, 0.5),
+		rgba(0, 0, 0, 0.5)),
+	url(img/a1.jpeg);/*inserta la imagen*/
+	background-position: center center; /*centra la imagen*/
+	background-repeat: no-repeat;/*para que no repita la imagen*/
+	background-size: cover;/*especifica el tamaño de la imágen de fondo, cubre todo el ancho*/
+	height: 500px;/*especifica la altura*/
+	width: 100%;/*ancho del elemento*/
+	padding: 25px; /*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+}
+.house-2{
+	background-image: linear-gradient(/*establece la imágen de fondo*/
+		rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)),
+	url(img/a6.jpeg);/*inserta la imagen*/
+	background-position: center center;/*centra la imagen*/
+	background-repeat: no-repeat;/*para que no repita la imagen*/
+	background-size: cover;/*especifica el tamaño de la imágen de fondo, cubre todo el ancho*/
+	height: 500px;/*especifica la altura*/
+	width: 100%;/*ancho del elemento*/
+	padding: 25px;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+}
+.house-3{
+	background-image: linear-gradient(/*establece la imágen de fondo*/
+		rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)),
+	url(img/a14.jpeg);/*inserta la imagen*/
+	background-position: center center;/*centra la imagen*/
+	background-repeat: no-repeat;/*para que no repita la imagen*/
+	background-size: cover;/*especifica el tamaño de la imágen de fondo, cubre todo el ancho*/
+	height: 500px;/*especifica la altura*/
+	width: 100%;/*ancho del elemento*/
+	padding: 25px;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+}
+.house-4{
+	background-image: linear-gradient(/*establece la imágen de fondo*/
+		rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)),
+	url(img/a18.jpeg);/*inserta la imagen*/
+	background-position: center center;/*centra la imagen*/
+	background-repeat: no-repeat;/*para que no repita la imagen*/
+	background-size: cover;/*especifica el tamaño de la imágen de fondo, cubre todo el ancho*/
+	height: 500px;/*especifica la altura*/
+	width: 100%;/*ancho del elemento*/
+	padding: 25px;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+}
+.house-5{
+	background-image: linear-gradient(/*establece la imágen de fondo*/
+		rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)),
+	url(img/a16.jpeg);/*inserta la imagen*/
+	background-position: center center;/*centra la imagen*/
+	background-repeat: no-repeat;/*para que no repita la imagen*/
+	background-size: cover;/*especifica el tamaño de la imágen de fondo, cubre todo el ancho*/
+	height: 500px;/*especifica la altura*/
+	width: 100%;/*ancho del elemento*/
+	padding: 25px;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+}
+.house-6{
+	background-image: linear-gradient(/*establece la imágen de fondo*/
+		rgba(0, 0, 0, 0.5), 
+		rgba(0, 0, 0, 0.5)),
+	url(img/a31.jpeg);/*inserta la imagen*/
+	background-position: center center;/*centra la imagen*/
+	background-repeat: no-repeat;/*para que no repita la imagen*/
+	background-size: cover;/*especifica el tamaño de la imágen de fondo, cubre todo el ancho*/
+	height: 500px;/*especifica la altura*/
+	width: 100%;/*ancho del elemento*/
+	padding: 25px;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+}
+.txt{
+	position: relative;/*especifica cómo el elemento esta posicionado en el documento*/
+}
+.txt span{
+	color: white;/*especifica un color*/ 
+	font-size: 35px;/*dimension de la letra*/
+}
+.txt h3{
+	color: white;/*especifica un color*/ 
+	font-size: 35px;/*dimension de la letra*/
+}
+.txt p{
+	font-size: 16px;/*dimension de la letra*/
+	color: white;/*especifica un color*/ 
+	position: absolute;/*especifica cómo el elemento esta posicionado en el documento*/
+	top: 400px;/*especifica parte de la posición de un elemento posicionado "arriba"*/
+	left: 0;/*especifica parte de la posición de un elemento posicionado "izquierda"*/
+	rotate: 270deg;/*define una transformación que gira un elemento*/
+}
+.footer{
+	padding: 100px 0 0 0;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+}
+.footer-content{
+	display: flex;/*establece los tipos de visualización interna y externa, flex en este caso flexible*/
+}
+.footer-form{
+	width: 50%;/*ancho del elemento*/
+}
+.footer-txt{
+	width: 50%;/*ancho del elemento*/
+}
+form{
+	display: flex; /*establece los tipos de visualización interna y externa, flex en este caso flexible*/
+	width: 350px;/*ancho del elemento*/
+	flex-direction: column; /*especifica cómo colocar los objetos flexibles en forma columna*/
+	margin-left: 200px;/*establece un margen a la izquierda*/
+}
+.campo{
+	background-color: #201F23;/*define el color de fondo del elemento*/
+	padding: 17px 35px;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+	outline: none;/*outline establece de forma reducida las propiedades individuales de contorno */
+	color: white;/*especifica un color*/ 
+	border: 0;/*agrega un borde*/
+	margin-bottom: 10px;/*establece el espacio inferior del elemento*/
+}
+.campo::placeholder{
+	color: #7e7e7e;/*especifica un color*/ 
+}
+.btn-2{
+	padding: 17px 35px;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+	border: 2px solid #b7975b;/*agrega un borde de 2 pixeles con color*/
+	background-color: #b7975b;/*define el color de fondo del elemento*/
+	color: #FEFCFB;/*especifica un color*/ 
+	border-radius: 25px;/*agrega un borde con radio*/
+	text-transform: uppercase; /*especifica el cambio entre mayúsculas y minúsculas del text*/
+}
+.footer-txt h3{
+	color: #FEFCFB;/*especifica un color*/ 
+	font-size: 35px;/*dimension de la letra*/
+	margin: 0 100px 20px 0;/*agrega un margen*/
+} 
+.footer-txt p{
+	margin-bottom: 25px;/*establece el espacio inferior del elemento*/
+	font-size: 18px;/*dimension de la letra*/
+	color: white;/*especifica un color*/ 
+}
+.footer-2 p{
+	padding: 50px 0;/*establece el área de relleno en los cuatro lados de un elemento a la vez*/
+	text-align: center;/*establece la alineación horizontal del contenido en este caso justificado*/
+	font-size: 16px;/*dimension de la letra*/
+	color: white;/*especifica un color*/ 
+}
+.logo img{ /*manda a llamar al logo*/
+	width: 300px; /*ancho*/
+	height: 300px; /*alto*/
+	float: left; /*hace flotar la imagen*/
+	margin-right: 30px;/*margen a la imagen*/
+	border-radius: 20%; /*borde*/
+	margin-left: 30px;/*establece un margen a la izquierda*/
+	margin-top: 30px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
